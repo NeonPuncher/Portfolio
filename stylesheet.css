@@ -1,0 +1,85 @@
+.body {
+    background-color: #171717;
+    background-image: url(images/Backdrop.png);
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: paintfont;
+    src: url(images/paintstrokes.otf);
+}
+
+h2 {
+    font-family: paintfont;
+    font-size: 40px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+a {
+    font-family: paintfont;
+    font-size: 20px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    background-color:#212121;
+    border:1px solid white  ;
+    background-image: url('images/BannerTest.png');
+    background-size: 100%;
+    
+}
+
+.zoom {
+    transition: transform .1s;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+.productImg {
+    float: left;
+    width: 30%;
+    padding: 40px;
+}
+
+.container_images {
+    text-align:center;
+}
+
+.button {
+    display: block;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+}
+
+.banner {
+    width: 100%;
+}
+
+
+
+
+
