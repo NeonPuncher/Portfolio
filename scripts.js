@@ -12,3 +12,19 @@ for (i = 0; i < coll.length; i++) {
         }
     });
 }
+
+let modal = document.getElementById("zoomPic");
+let img = document.getElementById("myImg");
+let modalImg = document.getElementById("img0");
+let captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.lastChild;
+}
+
+let span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+    modal.style.display = "none";
+}

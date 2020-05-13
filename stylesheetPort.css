@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    background-color: #141414;
+    background-image: url(images/Backdrop.png);
+}
+
+@font-face {
+    font-family: paintfont;
+    src: url(images/paintstrokes.otf);
+}
+
+h2 {
+    font-family: paintfont;
+    font-size: 40px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-family: paintfont;
+    font-size: 35px;
+    margin: 10px;
+    text-align: center;
+}
+
+h4 {
+    font-family: paintfont;
+    font-size: 25px;
+    margin: 10px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+a {
+    font-family: paintfont;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+a:hover {
+    color: black;
+}
+
+table {
+    font-family: 'Montserrat', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid white;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: white;
+    color: black;
+}
+
+.textcontainer {
+    background-color: #1a1a1a;
+    border-radius: 25px;
+    padding: 20px 20px;
+    margin: 80px 80px;
+    color: white;
+    float: left;
+}
+
+.container {
+    background-color:#212121;
+    border:1px solid white  ;
+    background-image: url('images/BannerTest.png');
+    background-size: 100%;
+    
+}
+
+.imgcontainer {
+    width: 30%;
+    padding: 10px;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 4px 8px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: white;
+    color: black;
+}
+
+li a:hover:not(.active) {
+    background-color: #141414;
+    color: white;
+}
+
+.collapsible {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin: 10px 30px 10px 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 25px;
+}
+
+.active, .collapsible:hover {
+    background-color: white;
+    color: black;
+}
+
+.content {
+    display: none;
+    overflow: hidden;
+    background-color: black;
+}
+
+.linkbutton {
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+.linkbutton:hover {
+    background-color: white;
+    color: black;
+}
+
+.picture {
+    border-radius: 5px;
+    width: 48%;
+    float: left;
+    margin: 2px;
+}
+
+.picture:hover {
+    filter: opacity(80%);
+    transition: 0.3s;
+}
+

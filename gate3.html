@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="stylesheetnavbar.css">
+    <link rel="stylesheet" type="text/css" href="stylesheetPort.css">
+    <link rel="stylesheet" type="text/css" href="stylesheetnavbarPort.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -13,9 +13,10 @@
         <li><a href="index.html"><h3>Home</h3></a></li>
         <button type="button" class="collapsible"><h3>Semester 4</h3></button>
         <div class="content">
-            <li><a href="gate1.html"><h3>Gate 1</h3></a></li>
-            <li><a href="gate2.html"><h3>Gate 2</h3></a></li>
-            <li><a href="gate3.html" class="active"><h3>Gate 3</h3></a></li>
+            <li><a href="gate1.html"><h3>SCO</h3></a></li>
+            <li><a href="gate2.html"><h3>UX</h3></a></li>
+            <li><a class="active" href="gate3.html"><h3>DEV</h3></a></li>
+            <li><a href="reflecteren.html"><h3>Reflecteren</h3></a></li>
         </div>
         <button type="button" class="collapsible"><h3>Game Development</h3></button>
         <div class="content">
@@ -24,12 +25,114 @@
             <li><a href="Shadow.html"><h3>Shadow Beta</h3></a></li>
             <li><a href="Tarnished.html"><h3>Tarnished</h3></a></li>
         </div>
-        <li><a href="index.html"><h3>Webshop</h3></a></li>
     </ul>
-
     <div style="margin-left: 20%;">
         <div class="container">
-            <h2>Gate 3</h2>
+            <h2>DEV</h2>
+        </div>
+        <div class="textcontainer">
+            <h3>Gate 1</h3>
+            <div style="float: left; margin-bottom: 20px;">
+                <div style="width: 45%; float: left;">
+                    <h3>Onderzoek</h3>
+                    <p>Voor gate 1 was er nog niet veel te doen bij het DEV onderdeel, 
+                        dit kwam vooral omdat het eerst onderzoeken was wat er nu eigenlijk gemaakt kan worden. 
+                        Hierbij hebben we al wel gekeken naar wat voor producten er al bestaan voor ons probleem, 
+                        en op wat voor manier deze in elkaar zitten. Hierbij is dan ook gekeken naar een eventuele Code editor die gebruikt kan worden bij onze ideeën. </p>
+                        <p>Voor de available product analysis hebben we gebruik gemaakt van apps die er op dit moment zijn voor zorgverleners, 
+                            en die ze gebruiken om hun werk te doen. Hierbij is vooral te zien dat ze veel verschillende apps hebben voor verschillende taken. 
+                            De meeste van deze apps zijn op de telefoon aangezien deze altijd mee wordt genomen door een zorgverlener, dus deze het meest accessible is.</p>
+                </div>
+                <div style="width: 45%; float: right;">
+                    <h3>Available product Analysis</h3>
+                    <p>Available product AnalysisKijkend naar de meest gebruikte apps voor zorgverleners is te ziendat er verschillende apps zijn voor verschillende delen van het beroep. 
+                        Er is niet één app die al deze functies samenvoegt en dit kan misschien hinderend zijn voor de verleners aangezien ze verschillende informatie in de verschillende apps moeten zoeken.
+                         De verschillende apps die er zijn focussen zich vooral op de medicatie en het bijhouden van de ouderen. Er zijn bijvoorbeeld apps die het gewicht van de ouderen bijhoudt en hierop laat 
+                         zien of hun gewicht vooruit of achteruit gaan, dit kan benodigde informatie zijn voor een zorgverlener en het is dus goed als een app die automatisch bijhoudt en hier een 
+                         melding over geeft wanneer dit alarmerend is. Ook zijn er apps waar in vermeld wordt wat de juiste dosering is voor verschillende medicijnen, hier kan de zorgverlener het merk 
+                         of het type medicijn zoeken en er staat vermeld wat de juiste hoeveelheid is om in te nemen voor declient.</p>
+                </div>
+            </div>
+            <img src="images/productanalysis.png" alt="Product Analysis" style="width: 100%;">
+            <hr>
+            <h3>Gate 2</h3>
+            <div style="float: left; margin-bottom: 20px;">
+                <div style="width: 45%; float: left;">
+                    <h3>Product Backlog</h3>
+                    <p>Het is belangrijk om User stories te maken bij een product. Hierdoor kan er per functie aangekaart worden wat er nu daadwerkelijk bij moet komen als functies zodat het overzichtelijker is wat er nog gedaan moet worden binnen het project. </p>
+                    <p>Het is hierbij slim om het in zo veel mogelijk kleinere user stories te hakken, in plaats van één grote user story (EPIC) te beginnen aangezien het dan een stuk onduidelijker is welke functies er nu precies in moeten. </p>
+                    <p>Ook is het slim om zo de taken te verdelen binnen de groep zodat deze beter afgestreept kunnen worden wanneer er een POC klaar ligt om te testen. </p>
+
+                    <table>
+                        <tr>
+                            <th>User Story</th>
+                            <th>Acceptance Criteria</th>
+                        </tr>
+                        <tr>
+                            <td>Als een oudere wil ik een dispenser die een duidelijk signaal geeft wanneer er medicatie klaarligt, zodat ik deze niet vergeet.</td>
+                            <td>*Een userinterface die verteld wanneer het alarm afgaat.
+                                <br>*Een alarm sound die duidelijk is
+                                <br>*2 meldingen hebben verschillende geluidjes
+                                <br>*Het alarm voor een paar seconden aflaten gaan voordat er een melding wordt doorgestuurd.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Als een oudere wil ik een user interface die duidelijk is voor mij, zodat ik met mijn minder technisch begrip het wel begrijp.</td>
+                            <td>*Medicatie met juiste hoeveelheid eruit laten komen.
+                                <br>*Een visuele stimuli die duidelijk is
+                                <br>*User interface die goed te gebruiken is voor ouderen. (door middel van onderzoek)
+                                <br>*Grote letters
+                                <br>*Duidelijke plaatjes
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>Als oudere wil ik een interface die laat zien wanneer de medicatie eruit komt, zodat ik dit kan mee plannen met de rest van mijn dag.</td>
+                            <td>*Interface die laat zijn hoe laat het is
+                                <br>*Laat zien hoe laat de medicatie komt
+                                <br>*Geef een melding wanneer de medicatie eruit komt.
+                                <br>*Verstelbare tijd alleen in kunnen voeren als mantelzorger of zorgverlener
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>Als zorgverlener wil ik zien welke medicatie aanwezig is, zodat ik zo min mogelijk tijd verlies met het aanvullen.</td>
+                            <td>*Interface geeft hoeveelheid medicatie aan
+                                <br>*Interface geeft automatisch melding wanneer leeg / bijna leeg
+                                <br>*Dispenser stuurt een melding welke medicatie aanwezig is.
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>Als mantelzorger wil ik een dispenser die duidelijk informatie geeft zodat ik weet waar de oudere aan toe is.</td>
+                            <td>*Interface geeft aan de tijd wanneer de medicatie ingenomen moet worden.
+                                <br>*Interface geeft aan of de medicatie al genomen is voor de dag.
+                                <br>*Interface geeft aan of er eventuele medicatie is vergeten voor de dag.
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>Als zorgverlener wil ik dat de dispenser mij meldingen geeft wanneer de client nog geen medicatie heeft genomen, zodat ik weet wanneer er iets aan de hand is.</td>
+                            <td>*Meldingen met accurate data 
+                                <br>*Data visualiseren
+                                <br>*Een communicatie API tussen de dispenser en de app
+                                <br>*Een communicatie API tussen de dispenser en het monitoren
+                                </td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="width: 45%; float: right;">
+                    <h3>Architectuur Diagram</h3>
+                    <p> Het is handig om een architectuur diagram te maken om beter in te kunnen zien uit wat voor onderdelen het product nu bestaat. 
+                        Bij het opstellen van de verschillende functies wordt er ook gekeken naar hoe deze gebruikt worden door de verschillende doelgroepen. 
+                        Hierbij maak je dus duidelijk wat het uiteindelijke doel is voor de functie en waarom ze dus zo belangrijk zijn. </p>
+                    <img src="images/ArchitectuurDiagram.png" alt="Architectuur Diagram" style="width: 100%;">
+                </div>
+            </div>
+            <hr>
+            <h3>Gate 3</h3>
+            <div style="float: left; margin-bottom: 20px;">
+                <div style="width: 45%; float: left;">
+                </div>
+                <div style="width: 45%; float: right;">
+                </div>
+            </div>
         </div>
     </div>
 </body>
