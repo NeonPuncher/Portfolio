@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-attachment: fixed;
     background-color: #141414;
     background-image: url(images/Backdrop.png);
 }
@@ -152,13 +153,12 @@ li a:hover:not(.active) {
 
 .picture {
     border-radius: 5px;
-    width: 48%;
     float: left;
     margin: 2px;
 }
 
 .picture:hover {
-    filter: opacity(80%);
+    filter: opacity(60%);
     transition: 0.3s;
 }
 

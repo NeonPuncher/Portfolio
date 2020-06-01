@@ -53,7 +53,7 @@
                          of het type medicijn zoeken en er staat vermeld wat de juiste hoeveelheid is om in te nemen voor declient.</p>
                 </div>
             </div>
-            <img src="images/productanalysis.png" alt="Product Analysis" style="width: 100%;">
+            <img src="images/productAnalysis.png" alt="Product Analysis" style="width: 100%;">
             <hr>
             <h3>Gate 2</h3>
             <div style="float: left; margin-bottom: 20px;">
@@ -123,14 +123,97 @@
                         Bij het opstellen van de verschillende functies wordt er ook gekeken naar hoe deze gebruikt worden door de verschillende doelgroepen. 
                         Hierbij maak je dus duidelijk wat het uiteindelijke doel is voor de functie en waarom ze dus zo belangrijk zijn. </p>
                     <img src="images/ArchitectuurDiagram.png" alt="Architectuur Diagram" style="width: 100%;">
+                    <p>Er is hier uit feedback gekomen dat dit eigenlijk geen architectuur diagram is maar meer een workflow diagram.
+                        Hierdoor heb ik nog een keer gekeken naar verschillende architectuur diagrammen van mede-leerlingen en online, en heb een uiteindelijke
+                        nieuwe architectuur diagram ontworpen. Deze diagram is niet het officiële diagram voor het groepje aangezien deze al was ontworpen, maar 
+                        meer voor mijzelf om te oefenen met het ontwerpen van een architectuur diagram. 
+                    </p>
+                    <p>Het uiteindelijke doel van een architectuur diagram is voor mij ook veel duidelijker geworden. Het is dus meer de bedoeling om te kijken 
+                        uit welke onderdelen het product nu gaat bestaan en hoe deze onderling met elkaar gaan communiceren. Het is hierbij ook belangrijk om aan 
+                        deze richtlijnen gedurende het hele project te houden.
+                    </p>
+                    <img src="images/ArchitectuurDiagram2.png" alt="Architectuur Diagram 2" style="width: 100%;">
                 </div>
             </div>
             <hr>
             <h3>Gate 3</h3>
             <div style="float: left; margin-bottom: 20px;">
                 <div style="width: 45%; float: left;">
+                    <h3>FrameWork Onderzoek</h3>
+                    <h4>Waarvoor een framework?</h4>
+                    <p>Aangezien we met een grotere groep de applicatie uiteindelijk gaan realiseren omdat iedereen Development moet gaan aantonen is het handig om te werken met een framework. Hierdoor werken de verschillende delen van de applicatie hetzelfde en beter samen. Het maakt het werken met javascript ook een stuk gemakkelijker aangezien er al een hoop onderdelen in de framework zitten die gebruikt kunnen worden binnen onze applicatie. </p>
+                    <p>Het wordt veel gebruikt bij het ontwerpen van user interfaces, en iedere framework heeft wel zijn eigen specialiteit, er moet dus grondig gekeken worden naar wat onze prioriteiten zijn binnen onze applicatie.</p>
+                    <p>Ook werkt het goed als de applicatie op een ander formaat gemaakt moet worden en dus responsible moet zijn. We hebben al uit onderzoek geconstateerd dat onze uiteindelijke applicatie op een tablet formaat gemaakt moet worden en er moet dus een framework gevonden die dit mogelijk maakt. </p>
+                    <h4>Wat moet het framework bevatten?</h4>
+                    <p>De framework moet toegankelijk zijn voor verschillende niveaus binnen het javascripten, aangezien iedereen van onze groep ermee moet werken. </p>
+                    <p>Het moet device responsive zijn zodat we het ook gemakkelijk op tablet formaat kunnen programmeren.</p>
+                    <p>Een userinterface moet gemakkelijk op te zetten zijn en deze moet een professionele en minimalistische uitstraling hebben. </p>
+                    <p>Er moeten gemakkelijk dingen in de framework aangepast kunnen worden mocht dit mogelijk zijn. </p>
+                    <p>Automatisch data updaten wanneer dit veranderd wordt.</p>
+                    <h4>Welke heb ik gevonden?</h4>
+                    <table>
+                        <tr>
+                            <th>Vue.js</th>
+                            <th>React</th>
+                            <th>Angular</th>
+                        </tr>
+                        <tr>
+                            <td>Gemakkelijk om mee te beginnen.</td>
+                            <td>Maakt het zeer gemakkelijk om UIs te maken.</td>
+                            <td>Bouw offline apps.</td>
+                        </tr>
+                        <tr>
+                            <td>Het werkt ook gemakkelijk en goed samen met andere libraries en projects.</td>
+                            <td>Veranderd de data automatisch wanneer nodig.</td>
+                            <td>Ingebouwde code splitting dat sneller load times geeft.</td>
+                        </tr>
+                        <tr>
+                            <td>Werkt goed voor het maken van ‘One-pagers’.</td>
+                            <td>Component based, gemakkelijk om aparte functies uit de framework te halen en deze op je eigen manier samen te voegen. </td>
+                            <td>Automatische code generation dat je code optimaliseert.</td>
+                        </tr>
+                        <tr>
+                            <td>Vraagt om een bekend gevoel met HTML, JS en CSS</td>
+                            <td>Met de render() functie kun je gemakkelijk data opmaken zoals het er uit moet zien in HTML binnen JS.</td>
+                            <td>Bevat templates om snel UI te ontwerrpen.</td>
+                        </tr>
+                        <tr>
+                            <td>Met de Vue CORE kun je gemakkelijk data opmaken zoals het er uit moet zien in HTML binnen JS.
+                                Voeg gemakkelijk conditions en loops toe in de interface.
+                                </td>
+                            <td>Het werkt ook gemakkelijk en goed samen met andere libraries en frameworks.</td>
+                            <td>Maak complexe animaties met weinig code.</td>
+                        </tr>
+                    </table>
                 </div>
                 <div style="width: 45%; float: right;">
+                    <h3>GitHub Workflow</h3>
+                    <button class="linkbutton"><a href=""><h3>GitHub Eurocom</h3></a></button>
+                    <button class="linkbutton"><a href=""><h3>GitHub Portfolio</h3></a></button>
+                    <h3>POC's</h3>
+                    <div align="center">
+                        <button class="linkbutton"><a href="POCtjes/notification.html"><h3>Notifications</h3></a></button>
+                        <button class="linkbutton"><a href="POCtjes/charts.html"><h3>Grafieken Generator</h3></a></button>
+                    </div>
+                    <h4>Notifications</h4>
+                    <p>Bij deze proof of concept heb ik nagedacht over wat de fijnste manier is om een notification te krijgen.
+                        (met / zonder geluid, met / zonder confirmation, etc.) Dit was om te testen welke manieren er al zijn en of ik deze 
+                        kan namaken. Het doel van dit poctje was om zoveel mogelijk verschillende manieren van notifications op een pagina te hebben,
+                        zodat ik deze kan voorleggen bij de doelgroep en hieruit kan concluderen welke notificatie het beste werkt.
+                    </p>
+                    <p>Toevoegingen aan deze POC kunnen zijn hoe deze notifications er op verschillende devices eruit gaan zien, inplaats van een alert.</p>
+                    <h4>Grafieken Generator</h4>
+                    <p>Vanuit Eurocom hebben wij de vraag gekregen of dat de clienten de data gevisualiseerd zouden willen hebben, en zo ja, hoe wij die data willen
+                        gaan visualiseren binnen ons dashboard. Ik ben hieruit dus zelf met het idee gekomen om voor de verschillende delen binnen het monitoren deze te gaan
+                        visualiseren met een grafiek. (Bloeddruk, bloedsuiker, bloedstolling).
+                        Ik moet een grafiek hebben die constant geupdate werd en dit dus ook opgeslagen word.
+                    </p>
+                    <p>Ik heb voor mijn probleem een library gevonden 'Charts.js' die gemakkelijk een grafiek kan genereren met een gegeven array aan data.
+                        Deze data kan geupdate worden door een nummer erbij te geven en het eerste nummer uit de array te halen. 
+                    </p>
+                    <p>Toevoegingen aan deze POC zouden zijn dat de grafiek automatisch opnieuw getekend word om de data zo goed te blijven updaten, en de data 
+                        uit een database te halen zodat hij deze ook kan opslaan. 
+                    </p>
                 </div>
             </div>
         </div>
