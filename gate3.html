@@ -116,6 +116,8 @@
                                 </td>
                         </tr>
                     </table>
+                    <h4>Taiga Userstories</h4>
+                    <div align="center"><button class="linkbutton"><a href="https://tree.taiga.io/project/carboose-eurocom-group/taskboard/gate-3-1"><h3>Taiga Dashboard</h3></a></button></div>
                 </div>
                 <div style="width: 45%; float: right;">
                     <h3>Architectuur Diagram</h3>
@@ -186,11 +188,16 @@
                         </tr>
                     </table>
                     <h4>REACT.JS</h4>
-                    <p style="width: 50%; float: left;">De beste framework uit de test is REACT.JS, dit hebben we als groep besloten nadat iedereen ook zijn eigen onderzoek had gedaan binnen de 
-                        frameworks. Het bleek dus handig te zijn dat de framework automatisch data kan updaten en kan bijwerken zonder de pagina constant te herlanden 
-                        of op een knop te drukken. Nadat iedereen het hiermee eens was werd het vooral kijken naar hoe er begonnen moest worden met REACT.
+                    <p>
+                        Waarom is er voor React.js gekozen?
+                        Er moest natuurlijk een framework gekozen worden om mee te gaan werken voor dit product, en er is na wat overleggen uitgekomen dat we met React.js gaan werken, maar waarom?                         
                     </p>
-                    <img src="images/reactlogo.png" alt="ReactLogo" style="width: 49%; float: left; margin-left: 5px;">
+                    <p>
+                        React heeft een live automatische data updater die essentieel is voor onze app, aangezien we de gebruiker op de hoogte willen houden van de status van zijn / haar cliënten, wat pakt de e-pleister op voor data, hoeveel? medicatie zit er in de dispenser? Dit moet allemaal teruggekoppeld worden binnen een bepaalde tijd naar het dashboard. 
+                        <br>Ook kan er met de render() functie gemakkelijk javascript binnen html geïntegreerd worden. Data binnen inputs en buttons kunnen snel veranderd worden door deze methode toe te passen. 
+                        <br>Er kan modulair gewerkt worden door het zelf maken van components. Hierdoor wordt het product overzichtelijker van binnen en kunnen eventuele fouten er makkelijk uit worden gehaald. 
+                    </p>
+                    <p>Op basis van deze criteria hebben wij ervoor gekozen om verder te gaan met React.js, het wordt voor mij wel een pittige klus, aangezien ik nog niet eerder met React.js heb gewerkt.</p>
                 </div>
                 <div style="width: 45%; float: right;">
                     <h3>GitHub Workflow</h3>
@@ -238,6 +245,64 @@
                         Dit was onder anderen al een hele klus om dit werkend te krijgen. Maar toen het uiteindelijk werkte begreep ik al een stuk beter hoe 
                         ik met react moest werken. 
                     </p>
+                </div>
+            </div>
+            <hr>
+            <h3>Dashboard Uitwerken</h3>
+            <div style="float: left; margin-bottom: 20px;">
+                <div style="width: 45%; float: left;">
+                    <h3>EuroCom Dashboard</h3>
+                    <div align="center">
+                        <button class="linkbutton"><a href="https://hogehoogte.nl/"><h3>Dashboard Online</h3></a></button>
+                    </div>
+                    <p>Gebruikersnaam: eurocom, Wachtwoord: zuigtgeitenballen</p>
+                    <p>Het is gemaakt voor Ipad formaat, dit kan gemakkelijk aangepast worden bij het 'inspecteren' van de webpagina</p>
+                    <h4>Wat heb ik gedaan?</h4>
+                    <p>Ik heb de userstory "Front-end Monitoring - E-pleister Wizard of Oz (JS framework > grafieken)" op mijzelf genomen.</p>
+                    <p>Ik ben zelf begonnen om het dashboard te realiseren binnen react. We hebben de verschillende pagina's van het dashboard onderverdeeld binnen de groep en ik
+                        kreeg de monitoring page als project om zelf uit te werken. Wat hiervoor gedaan moet worden was om het bestaande prototype over te zetten naar react en deze 
+                        te realiseren.
+                    </p>
+                    <p>Wat al wel duidelijk werd is dat we helaas geen data kunnen gebruiken van e-pleister aangezien we hier helaas niet aan kunnen komen gedurende deze tijd.
+                        Dus wat er gaat gebeuren is dat er met dummy data gewerkt moet worden binnen het dashboard, en op basis hiervan kunnen er verschillende meldingen worden 
+                        doorgekoppeld worden naar de homepage van het dashboard. 
+                    </p>
+                    <p>Tijdens het maken van het dashboard zijn wij als groep wel een hoop obstakels moeten overkomen. Bij mij waren deze obstakels vooral, 
+                        de variabelen goed genereren en op zijn plaats zetten, en de graph.js werkend krijgen met react. 
+                    </p>
+                    <p>
+                        Ik heb na het maken van mijn eigen pagina het ook nog op mij genomen om de pagina's van Lex af te maken, dit waren de cliënten lijst en de opmerkingen pagina. 
+                        Ik heb dit uiteindelijk gedaan puur op basis van het visueel maken zodat er doorheen geklikt kan worden en het tussenlinken van de pagina's. 
+                    </p>
+                    <img src="images/clientlijst.png" alt="Monitoring page finished" width="49%" style="float: left;">
+                    <img src="images/opmerkingen.png" alt="Monitoring page finished" width="49%" style="float: left;">
+                </div>
+                <div style="width: 45%; float: right;">
+                    <h3>Dashboard realisatie</h3>
+                    <p>Het uiteindelijke resultaat van de styling van de pagina.
+                        Ik heb gebruik gemaakt van de pagina die ik local had gemaakt voor dit project, en de sidebar ingeporteerd van de homepage. 
+                        De random number generator zit er ook in gebouwd. Het is nu nog de bedoeling dat hij deze script iedere minuut uitvoerd en deze getallen 
+                        in een grafiek zet. 
+                    </p>
+                    <img src="images/ReactCode.png" alt="monitoring dashboard" width="100%">
+                    <p>Nadat ik de styling van de pagina correct had ben ik begonnen aan het invullen van de verschillende input fields binnen de webpagina.
+                        Dit bleek nog een zeer moeilijk process te zijn aangezien ik de variabelen wou genereren in een apparte jsx file. 
+                        Ik heb er voor gekozen om uiteindelijk de Generate file 2 verschillende delen te laten exporteren waar 4 variabelen in totaal worden gegenereerd.
+                        Deze variabelen worden iedere 3 seconden gegenereerd zodat er een gevoel van monitoring wordt gegeven die eigenlijk zou 
+                        gedaan worden door de e-pleister. Maar aangezien dit nog toekomst technologie is wordt het gedaan met Dummy Data.
+                    </p>
+                    <p>
+                        Verder moest er nog een manier zijn om te kijken of deze data onder een bepaald niveau zou komen, en wanneer dit gebeurd 
+                        de kleur van de input fields veranderd op basis van boven of onder de waarden zitten. 
+                    </p>
+                    <p>Hierna was de volgende challenge de grafiek werkend krijgen. Ik ben allereerst begonnen met het installeren van de chart.js library,
+                        ik kwam er echter pas veel later achter dat dit niet de bedoeling was en dat er een speciale library geinstalleerd moest worden voor 
+                        react genaamd 'React Chart.js 2'. Dit zorgde ervoor dat de code werkte, nu was het echter nog een probleem om de data binnen de charts 
+                        up te daten iedere 3 seconden. Het was gelukt om een array aan te maken die iedere 3 seconden een variabelen erafhaalde en toevoegd aan de 
+                        array. Deze array was echter moeilijk toe te voegen aan de data object. Maar na een aantal aanpassingen is dit toch gelukt!
+                    </p>
+                    <img src="images/MonitoringPage.png" alt="Monitoring page finished" width="49%" style="float: left;">
+                    <img src="images/GraphDesign.png" alt="Monitoring page finished" width="49%" style="float: left;">
                 </div>
             </div>
         </div>
